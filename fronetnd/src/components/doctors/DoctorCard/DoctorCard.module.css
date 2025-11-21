@@ -1,0 +1,117 @@
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.name {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.specialization {
+    margin: 0.25rem 0 0 0;
+    color: #3498db;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.editButton {
+    padding: 0.5rem 1rem;
+    background: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.editButton:hover {
+    background: #e67e22;
+}
+
+.deleteButton {
+    padding: 0.5rem 1rem;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.deleteButton:hover {
+    background: #c0392b;
+}
+
+.cardBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.details {
+    flex: 1;
+}
+
+.details p {
+    margin: 0.25rem 0;
+    color: #7f8c8d;
+}
+
+.patientList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.patientTag {
+    background: #ecf0f1;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: #7f8c8d;
+}
+
+.moreTag {
+    background: #bdc3c7;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.managementActions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.secondaryButton {
+    padding: 0.5rem 1rem;
+    background: #95a5a6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.secondaryButton:hover {
+    background: #7f8c8d;
+}

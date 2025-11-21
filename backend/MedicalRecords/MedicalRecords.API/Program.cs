@@ -8,6 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 var configuration = builder.Configuration;
 
+services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
+
 services.AddDbContextExtension(configuration);
 services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 services.AddScoped<IPatientService, PatientService>();
@@ -21,6 +32,8 @@ services.AddSwaggerGen();
 
 
 var app = builder.Build();
+
+app.UseCors();
 
 app.UseDbContextExtension();
 
