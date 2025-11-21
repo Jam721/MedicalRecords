@@ -1,0 +1,20 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MedicalRecords.API.DTOs.Request.Patient;
+
+public class PatientCreate
+{
+    [Required]
+    [MaxLength(100)]
+    public string FirstName { get; set; } = string.Empty;
+    
+    [Required]
+    [MaxLength(100)]
+    public string LastName { get; set; } = string.Empty;
+    
+    [Range(0, 150)]
+    public int Age { get; set; }
+    
+    [MaxLength(20)]
+    public string PhoneNumber { get; set; } = string.Empty;
+}
