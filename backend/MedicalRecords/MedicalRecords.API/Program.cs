@@ -1,4 +1,4 @@
-using MedicalRecords.API.Extendions;
+using MedicalRecords.API.Extensions;
 using MedicalRecords.Application.Interfaces;
 using MedicalRecords.Application.Interfaces.Services;
 using MedicalRecords.Application.Services;

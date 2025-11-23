@@ -3,7 +3,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 var postgres = builder.AddPostgres("postgres")
     .WithImage("postgres:15")
     .WithEnvironment("POSTGRES_USER", "postgres")
-    .WithEnvironment("POSTGRES_PASSWORD", "123")
+    .WithEnvironment("POSTGRES_PASSWORD", "Artur-123")
     .WithEnvironment("POSTGRES_DB", "MedicalRecords")
     .WithDataVolume();
 

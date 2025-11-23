@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace MedicalRecords.API.Extendions;
+namespace MedicalRecords.API.Extensions;
 
 public static class DatabaseExtension
 {
@@ -21,6 +21,6 @@ public static class DatabaseExtension
     {
         using var scope = app.Services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-        context.Database.EnsureCreated();
+        context.Database.Migrate();
     }
 }
